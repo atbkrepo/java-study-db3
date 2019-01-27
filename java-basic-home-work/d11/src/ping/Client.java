@@ -1,4 +1,4 @@
-package d10.ping;
+package ping;
 
 import java.io.*;
 import java.net.Socket;
