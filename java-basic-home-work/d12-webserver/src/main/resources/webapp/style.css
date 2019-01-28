@@ -1,0 +1,13 @@
+h1 {
+color: orange;
+text-align: center;
+}
+
+#box-one {
+background-color: gray;
+}
+
+#box-two {
+background-color: yellow;
+padding: 10px;
+}

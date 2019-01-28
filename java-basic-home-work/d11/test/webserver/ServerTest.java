@@ -11,7 +11,7 @@ public class ServerTest {
     @Test
     public void testServer() throws IOException, URISyntaxException {
         WebServer webServer = new WebServer();
-        webServer.setWebAppPath("resources/webapp");
+        webServer.setWebAppPath("webapp");
         webServer.setPort(3000);
         webServer.start();
     }
