@@ -27,14 +27,14 @@ public class HttpResponse extends HttpHeader {
             outputLineWriter.write(getHttpProtocol() + " " + HttpResponseCode.OK);
             outputLineWriter.write("\n");
             outputLineWriter.write("\n");
-
+            outputLineWriter.flush();
             int count = 0;
             byte[] buffer = new byte[255];
             while ((count = fileStream.read(buffer)) != -1) {
                 outputStream.write(buffer, 0, count);
             }
-            outputStream.flush();
-            outputStream.close();
+            //outputStream.flush();
+            //outputStream.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             throw new ServerException(HttpResponseCode.NOT_FOUND);
