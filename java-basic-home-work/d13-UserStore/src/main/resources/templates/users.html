@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+
+<table align="left" border="1" cellpadding="1" cellspacing="1" style="width:500px">
+    <thead>
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Second Name</th>
+        <th scope="col">Salary</th>
+        <th scope="col">DOB</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+      <#list users as user>
+      <tr>
+        <td>${user.firstName}</td>
+        <td>${user.secondName}</td>
+        <td>${user.lastName}</td>
+        <td>${user.salary}</td>
+        <td>${user.dateOfBirth}</td>
+        <td><input alt="edit" src="../img/edit-icon.png" style="width: 32px; height: 32px;" type="image"/>
+            <input alt="del" src="../img/Actions-edit-delete-icon.png" style="width: 32px; height: 32px;" type="image"/>
+        </td>
+      </tr>
+    </#list>
+
+    </tbody>
+</table>
+
+</body>
+</html>
